@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { Small } from '../Small'
 import { Large } from '../Large'
+import { ShootingStar } from '../ShootingStar'
 
 const OuterContainer = styled.div`
   position: fixed;
@@ -36,6 +37,7 @@ export const Arrangement: React.FC<Props> = ({
         {
           Array.from(Array(numLargeStars).keys()).map((_, i) => <Large key={i} />)
         }
+        <ShootingStar />
       </InnerContainer>
     </OuterContainer>
   )
