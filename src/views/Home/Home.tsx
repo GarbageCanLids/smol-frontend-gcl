@@ -8,7 +8,7 @@ import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
-import Star from '../../components/Star'
+import { LargeStar } from '../../components/Star'
 
 const Home: React.FC = () => {
   return (
@@ -27,6 +27,7 @@ const Home: React.FC = () => {
        🛸 <b>Tip</b>: smol tings are super rewarding 🛸
       </StyledInfo>
       <Spacer size="lg" />
+      <LargeStar />
       <div
         style={{
           margin: '0 auto',

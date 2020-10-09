@@ -1,0 +1,1 @@
+export { SmallStar } from './SmallStar'

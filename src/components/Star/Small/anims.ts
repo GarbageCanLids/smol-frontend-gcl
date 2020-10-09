@@ -1,24 +1,26 @@
 import { css, keyframes } from 'styled-components'
 
-export class AnimUtil {
+export class SmallStarAnims {
 
   static pulseSize = {
-    startProperties: css`
-      transform: scale3d(0, 0, 0);
-    `,
-    endProperties: css`
-      transform: scale3d(1, 1, 1);
-    `,
+    properties: {
+      start: css`
+        transform: scale3d(0, 0, 0);
+      `,
+      end: css`
+        transform: scale3d(1, 1, 1);
+      `,
+    },
     anim: (time: number, delay: number) => {
       const delayPercent = delay / (time + delay)
       const endPercent = (1 - delayPercent) * 100
 
-      const { startProperties, endProperties } = AnimUtil.pulseSize
+      const { start, end } = SmallStarAnims.pulseSize.properties
 
       const animKeyFrames = keyframes`
-      0% { ${startProperties} }
-      ${endPercent / 2}% { ${endProperties} }
-      ${endPercent}%, 100% { ${startProperties} }
+      0% { ${start} }
+      ${endPercent / 2}% { ${end} }
+      ${endPercent}%, 100% { ${start} }
     `
       return css`${animKeyFrames} ease-in-out ${time + delay}s infinite ${delay}s`
     },
