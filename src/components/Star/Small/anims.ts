@@ -2,7 +2,7 @@ import { css, keyframes } from 'styled-components'
 
 export class SmallStarAnims {
 
-  static pulseSize = {
+  static pulse = {
     properties: {
       start: css`
         transform: scale3d(0, 0, 0);
@@ -15,7 +15,7 @@ export class SmallStarAnims {
       const delayPercent = delay / (time + delay)
       const endPercent = (1 - delayPercent) * 100
 
-      const { start, end } = SmallStarAnims.pulseSize.properties
+      const { start, end } = SmallStarAnims.pulse.properties
 
       const animKeyFrames = keyframes`
       0% { ${start} }
