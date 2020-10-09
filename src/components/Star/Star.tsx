@@ -1,5 +1,5 @@
 import React from 'react'
-import { randomFloatInRange } from './util'
+import { MathUtil } from '../../utils'
 import { Styled } from './styles'
 
 interface Props {
@@ -11,8 +11,8 @@ const Star = ({
 }: Props) => {
   const props = {
     size,
-    animDelay: randomFloatInRange(2, 8),
-    animTime: randomFloatInRange(0.5, 1.5),
+    animDelay: MathUtil.randomFloatInRange(2, 8),
+    animTime: MathUtil.randomFloatInRange(0.5, 1.5),
     rotationDirection: Math.random() <= 0.5 ? 'LEFT' as const : 'RIGHT' as const
   }
 
