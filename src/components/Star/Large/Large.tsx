@@ -9,9 +9,11 @@ interface StyleProps {
   animDelay: number
   animTime: number
   rotationDirection: 'LEFT' | 'RIGHT'
+  left: number
+  top: number
 }
 
-export const StyledLargeStar = styled.div<StyleProps>`
+export const StyledLarge = styled.div<StyleProps>`
   height: ${props => props.size}px;
   width: ${props => props.size}px;
   animation:
@@ -36,7 +38,9 @@ export const StyledLargeStar = styled.div<StyleProps>`
   background-position: center;
   background-repeat: no-repeat;
 
-  position: relative;
+  position: absolute;
+  top: ${props => props.top}%;
+  left: ${props => props.left}%;
 
   &::after {
     content: '';
@@ -50,15 +54,17 @@ export const StyledLargeStar = styled.div<StyleProps>`
   }
 `
 
-export const LargeStar: React.FC = () => {
+export const Large: React.FC = () => {
   const props = {
     size: MathUtil.randomFloatInRange(25, 150),
     animDelay: MathUtil.randomFloatInRange(2, 8),
     animTime: MathUtil.randomFloatInRange(0.5, 1.5),
-    rotationDirection: Math.random() <= 0.5 ? 'LEFT' as const : 'RIGHT' as const
+    rotationDirection: Math.random() <= 0.5 ? 'LEFT' as const : 'RIGHT' as const,
+    top: Math.random() * 100,
+    left: Math.random() * 100,
   }
 
-  return <StyledLargeStar {...props} />
+  return <StyledLarge {...props} />
 }
 
 
