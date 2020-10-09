@@ -1,0 +1,1 @@
+export { LargeStar } from './LargeStar'

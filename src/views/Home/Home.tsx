@@ -8,7 +8,7 @@ import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
-import Star from '../../components/Star'
+import { LargeStar, SmallStar } from '../../components/Star'
 
 const Home: React.FC = () => {
   return (

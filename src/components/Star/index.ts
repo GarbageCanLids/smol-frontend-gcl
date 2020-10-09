@@ -1,1 +1,2 @@
-export { default } from './Star'
+export * from './Large'
+export * from './Small'
