@@ -8,17 +8,17 @@ import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
-import { LargeStar, SmallStar } from '../../components/Star'
+import { Star } from '../../components/Star'
 
 const Home: React.FC = () => {
   return (
     <Page>
+      <Star.Arrangement numLargeStars={5} numSmallStars={50} />
       <PageHeader
         icon={<img src={smol} height={120} />}
         title="big tings, smol pkgs"
         subtitle="collect them all"
       />
-
       <Container>
         <Balances />
       </Container>

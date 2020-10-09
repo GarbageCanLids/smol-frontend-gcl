@@ -1,1 +1,1 @@
-export { SmallStar } from './SmallStar'
+export * from './Small'
