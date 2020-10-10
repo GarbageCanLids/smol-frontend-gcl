@@ -47,14 +47,20 @@ export class LargeStarAnims {
         width: ${size * 0.15}px;
         top: calc(50% - ${(size * 0.15) / 2}px);
         left: calc(50% - ${(size * 0.15) / 2}px);
-        filter: blur(${size * 0.02}px);
+        filter:
+          blur(${size * 0.01}px)
+          drop-shadow(0 0 5px white)
+        ;
       `,
       end: (size: number) => css`
         height: ${size * 0.25}px;
         width: ${size * 0.25}px;
         top: calc(50% - ${(size * 0.25) / 2}px);
         left: calc(50% - ${(size * 0.25) / 2}px);
-        filter: blur(${size * 0.04}px);
+        filter:
+          blur(${size * 0.02}px)
+          drop-shadow(0 0 8px white)
+        ;
       `,
     },
     anim: (size: number, time: number, delay: number) => {

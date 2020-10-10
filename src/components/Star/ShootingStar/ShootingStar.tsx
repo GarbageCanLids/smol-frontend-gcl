@@ -75,7 +75,6 @@ const StyledShootingStar = styled.div<StyleProps>`
   top: ${props => props.top}%;
   left: ${props => props.left}%;
 
-  
   filter: drop-shadow(0 0 ${props => props.size / 2}px white);
   animation:
     ${props => starSize(props.size)} ${TOTAL_ANIM_TIME / 1000}s ease-in-out,

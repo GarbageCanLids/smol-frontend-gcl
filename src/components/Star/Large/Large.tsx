@@ -56,12 +56,12 @@ export const StyledLarge = styled.div<StyleProps>`
 
 export const Large: React.FC = () => {
   const props = {
-    size: MathUtil.randomFloatInRange(25, 150),
+    size: MathUtil.randomFloatInRange(25, 100),
     animDelay: MathUtil.randomFloatInRange(2, 8),
-    animTime: MathUtil.randomFloatInRange(0.5, 1.5),
+    animTime: MathUtil.randomFloatInRange(0.75, 1.25),
     rotationDirection: Math.random() <= 0.5 ? 'LEFT' as const : 'RIGHT' as const,
-    top: Math.random() * 100,
-    left: Math.random() * 100,
+    top: MathUtil.randomFloatInRange(0.2, 0.8) * 100,
+    left: MathUtil.randomFloatInRange(0.2, 0.8) * 100,
   }
 
   return <StyledLarge {...props} />
