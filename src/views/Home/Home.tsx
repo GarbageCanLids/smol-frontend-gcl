@@ -15,25 +15,13 @@ const Home: React.FC = () => {
     <Page>
       <Star.Arrangement numLargeStars={5} numSmallStars={50} />
       <PageHeader
-        icon={<img src={smol} height={120} />}
-        title="big tings, smol pkgs"
-        subtitle="collect them all"
+        icon={<img src={smol} height={160} />}
       />
       <Container>
         <Balances />
       </Container>
       <Spacer size="lg" />
-      <StyledInfo>
-       🛸 <b>Tip</b>: smol tings are super rewarding 🛸
-      </StyledInfo>
       <Spacer size="lg" />
-      <div
-        style={{
-          margin: '0 auto',
-        }}
-      >
-        <Button text="about smol" to="/about" variant="secondary" />
-      </div>
     </Page>
   )
 }

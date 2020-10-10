@@ -6,9 +6,8 @@ import smol from '../../assets/img/smol.png'
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <img src={smol} height="32" style={{ marginTop: -4 }} />
       <StyledText>
-        <SmolText>finance</SmolText>
+        <SmolText></SmolText>
       </StyledText>
     </StyledLogo>
   )

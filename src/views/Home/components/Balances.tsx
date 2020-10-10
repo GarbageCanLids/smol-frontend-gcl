@@ -95,7 +95,7 @@ const Balances: React.FC = () => {
               <div style={{ flex: 1 }}>
                 <Label text="Your SMOL Balance" />
                 <Value
-                  value={!!account ? getBalanceNumber(smolBalance) : 'Locked'}
+                  value={!!account ? getBalanceNumber(smolBalance) : 'Restricted'}
                 />
               </div>
             </StyledBalance>
@@ -112,9 +112,9 @@ const Balances: React.FC = () => {
 
       <Card>
         <CardContent>
-          <Label text="Total SMOL Supply" />
+          <Label text="Total SMOL Locked" />
           <Value
-            value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
+            value={totalSupply ? getBalanceNumber(totalSupply) : 'Restricted'}
           />
         </CardContent>
       </Card>
