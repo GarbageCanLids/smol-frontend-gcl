@@ -13,7 +13,7 @@ import { Star } from '../../components/Star'
 const Home: React.FC = () => {
   return (
     <Page>
-      <Star.Arrangement numLargeStars={5} numSmallStars={50} />
+      <Star.Arrangement height={'65vh'} width={'100vw'} numLargeStars={5} numSmallStars={50} />
       <PageHeader
         icon={<img src={smol} height={160} />}
       />
