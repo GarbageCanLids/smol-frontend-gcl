@@ -60,7 +60,7 @@ export const Large: React.FC = () => {
     animDelay: MathUtil.randomFloatInRange(2, 8),
     animTime: MathUtil.randomFloatInRange(0.75, 1.25),
     rotationDirection: Math.random() <= 0.5 ? 'LEFT' as const : 'RIGHT' as const,
-    top: MathUtil.randomFloatInRange(0.2, 0.8) * 100,
+    top: MathUtil.randomFloatInRange(0.2, 0.65) * 100,
     left: MathUtil.randomFloatInRange(0.2, 0.8) * 100,
   }
 
