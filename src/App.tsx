@@ -12,6 +12,7 @@ import TransactionProvider from './contexts/Transactions'
 import useModal from './hooks/useModal'
 import theme from './theme'
 import Home from './views/Home'
+import Farm from './views/Farm'
 //import Stake from './views/Stake'
 
 const App: React.FC = () => {
@@ -34,9 +35,9 @@ const App: React.FC = () => {
           <Route path="/" exact>
             <Home />
           </Route>
-          {/* <Route path="/farms">
-            <Farms />
-          </Route> */}
+          <Route path="/farms">
+            <Farm />
+          </Route>
           {/* <Route path="/staking">
             <Stake />
           </Route> */}
