@@ -8,12 +8,9 @@ import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
-import { Star } from '../../components/Star'
-
 const Home: React.FC = () => {
   return (
     <Page>
-      <Star.Arrangement height={'65vh'} width={'100vw'} numLargeStars={5} numSmallStars={50} />
       <PageHeader
         icon={<img src={smol} height={160} />}
       />

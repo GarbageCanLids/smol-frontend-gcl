@@ -11,6 +11,7 @@ import SmolProvider from './contexts/SmolProvider'
 import TransactionProvider from './contexts/Transactions'
 import useModal from './hooks/useModal'
 import theme from './theme'
+import { Star } from './components/Star'
 import Home from './views/Home'
 import Farm from './views/Farm'
 //import Stake from './views/Stake'
@@ -31,6 +32,7 @@ const App: React.FC = () => {
       <Router>
         <TopBar onPresentMobileMenu={handlePresentMobileMenu} />
         <MobileMenu onDismiss={handleDismissMobileMenu} visible={mobileMenu} />
+        <Star.Arrangement height={'65vh'} width={'100vw'} numLargeStars={5} numSmallStars={50} />
         <Switch>
           <Route path="/" exact>
             <Home />
