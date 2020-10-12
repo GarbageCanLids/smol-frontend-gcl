@@ -1,13 +1,16 @@
 import React, { useEffect, useMemo } from 'react'
-import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
+import { useParams } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 import { provider } from 'web3-core'
-import PageHeader from '../../components/PageHeader'
-import Spacer from '../../components/Spacer'
+
 import useFarm from '../../hooks/useFarm'
 import useSmol from '../../hooks/useSmol'
 import { getContract } from '../../utils/erc20'
+import Page from '../../components/Page'
+import PageHeader from '../../components/PageHeader'
+import Spacer from '../../components/Spacer'
+
 import Harvest from './components/Harvest'
 import Stake from './components/Stake'
 
@@ -51,7 +54,7 @@ const Farm: React.FC = () => {
   }, [earnToken])
 
   return (
-    <>
+    <Page>
       <PageHeader
         icon={icon}
         subtitle={`Deposit ${lpTokenName}  Tokens and earn ${earnTokenName}`}
@@ -78,7 +81,7 @@ const Farm: React.FC = () => {
         </StyledInfo>
         <Spacer size="lg" />
       </StyledFarm>
-    </>
+    </Page>
   )
 }
 
