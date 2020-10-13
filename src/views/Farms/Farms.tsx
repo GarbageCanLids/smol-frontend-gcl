@@ -26,9 +26,9 @@ const Farms: React.FC = () => {
           <>
             <Route exact path={path}>
               <PageHeader
-                icon={<img src={smol} height="120" />}
-                subtitle="smol ting tokens are earned by doing smol tings"
-                title="Select Your Favorite Dishes"
+                icon={<img src={smol} height="140" />}
+                subtitle="earn smol tings to get big tings"
+                title="smol tings rewards"
               />
               <FarmCards />
             </Route>
@@ -47,7 +47,7 @@ const Farms: React.FC = () => {
           >
             <Button
               onClick={onPresentWalletProviderModal}
-              text="🔓 Unlock Wallet"
+              text="🔓 Unlock Smollet"
             />
           </div>
         )}
