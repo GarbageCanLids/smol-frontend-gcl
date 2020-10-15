@@ -1,9 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import Footer from '../Footer'
 
-const Page: React.FC = ({ children }) => (
+import { Header } from './Header'
+import { Footer } from './Footer'
+
+interface Props {
+  subtitle?: string
+  title?: string
+}
+
+const Page: React.FC<Props> = ({
+  title,
+  subtitle,
+  children
+}) => (
   <StyledPage>
+    <Header title={title} subtitle={subtitle} />
     <StyledMain>{children}</StyledMain>
     <Footer />
   </StyledPage>

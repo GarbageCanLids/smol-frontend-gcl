@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Nav: React.FC = () => {
+export const Nav: React.FC = () => {
   return (
     <StyledNav>
       <StyledLink
@@ -45,5 +45,3 @@ const StyledLink = styled.a`
     color: ${(props) => props.theme.color.grey[500]};
   }
 `
-
-export default Nav

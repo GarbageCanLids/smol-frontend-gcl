@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import smol from '../../assets/img/smol.svg'
+import smol from '../../../assets/img/smol.svg'
 
-import Container from '../Container'
+import Container from '../../Container'
 
 interface PageHeaderProps {
   subtitle?: string
   title?: string
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ subtitle, title }) => {
+export const Header: React.FC<PageHeaderProps> = ({ subtitle, title }) => {
   return (
     <Container size="sm">
       <StyledPageHeader>
@@ -57,5 +57,3 @@ const StyledSubtitle = styled.h3`
   padding: 0;
   text-align: center;
 `
-
-export default PageHeader

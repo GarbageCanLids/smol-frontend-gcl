@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useWallet } from 'use-wallet'
-import smol from '../../assets/img/smol.png'
+// import smol from '../../assets/img/smol.png'
 import Button from '../../components/Button'
 import Page from '../../components/Page'
-import PageHeader from '../../components/PageHeader'
+// import PageHeader from '../../components/Page/Header'
 import WalletProviderModal from '../../components/WalletProviderModal'
 import useModal from '../../hooks/useModal'
 
@@ -35,14 +35,15 @@ const Farm: React.FC = () => {
   // }, [earnToken])
 
   return (
-    <Page>
+    <Page
+      title="smol finance"
+      subtitle="smol is the future of finance"
+    >
       {!!account ? (
         <>
-          <PageHeader
+          {/* <PageHeader
             icon={<img src={smol} height="120" />}
-            title="smol finance"
-            subtitle="smol is the future of finance"
-          />
+          /> */}
           {/* <FarmCards /> */}
           <div>TBD</div>
         </>
