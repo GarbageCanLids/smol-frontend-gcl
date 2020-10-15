@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useWallet } from 'use-wallet'
-// import smol from '../../assets/img/smol.png'
 import Button from '../../components/Button'
 import { Page, PageHeader } from '../../components/Page'
-// import PageHeader from '../../components/Page/Header'
 import WalletProviderModal from '../../components/WalletProviderModal'
 import useModal from '../../hooks/useModal'
 
