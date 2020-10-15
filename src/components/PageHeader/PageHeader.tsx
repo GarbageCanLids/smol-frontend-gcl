@@ -1,21 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+
+import smol from '../../assets/img/smol.svg'
+
 import Container from '../Container'
 
-
-
-
 interface PageHeaderProps {
-  icon: React.ReactNode
   subtitle?: string
   title?: string
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ icon, subtitle, title }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ subtitle, title }) => {
   return (
     <Container size="sm">
       <StyledPageHeader>
-        <StyledIcon>{icon}</StyledIcon>
+        <StyledIcon><img src={smol} height={160} alt="smol"/></StyledIcon>
         <StyledTitle>{title}</StyledTitle>
         <StyledSubtitle>{subtitle}</StyledSubtitle>
       </StyledPageHeader>

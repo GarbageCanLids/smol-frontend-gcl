@@ -6,6 +6,7 @@ import { provider } from 'web3-core'
 
 import useFarm from '../../hooks/useFarm'
 import useSmol from '../../hooks/useSmol'
+import smolImgSrc from '../../assets/img/smol.svg'
 import { getContract } from '../../utils/erc20'
 import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
@@ -56,7 +57,7 @@ const Farm: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={icon}
+        icon={smol}
         subtitle={`Deposit ${lpTokenName}  Tokens and earn ${earnTokenName}`}
         title={name}
       />

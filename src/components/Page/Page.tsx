@@ -5,7 +5,6 @@ import Footer from '../Footer'
 const Page: React.FC = ({ children }) => (
   <StyledPage>
     <StyledMain>{children}</StyledMain>
-    <h1>HELLO WORLD</h1>
     <Footer />
   </StyledPage>
 )
