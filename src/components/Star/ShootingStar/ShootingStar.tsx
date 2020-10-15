@@ -105,6 +105,7 @@ export const ShootingStar: React.FC = () => {
     top: Math.random() * 100,
     left: Math.random() * 100,
     size: MathUtil.randomFloatInRange(12, 14),
+    key: 1,
   }
   const [arr, setArr] = useState<React.ReactElement[]>([])
   useInterval(() => {
