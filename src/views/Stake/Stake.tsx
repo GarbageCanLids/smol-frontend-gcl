@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useWallet } from 'use-wallet'
-import smol from '../../assets/img/smol.png'
 import Button from '../../components/Button'
-import Page from '../../components/Page'
-import PageHeader from '../../components/PageHeader'
+import { Page, PageHeader } from '../../components/Page'
 import WalletProviderModal from '../../components/WalletProviderModal'
 import useModal from '../../hooks/useModal'
 
@@ -39,7 +37,6 @@ const Farm: React.FC = () => {
       {!!account ? (
         <>
           <PageHeader
-            icon={<img src={smol} height="120" />}
             title="smol finance"
             subtitle="smol is the future of finance"
           />

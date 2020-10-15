@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Footer from '../Footer'
 
-const Page: React.FC = ({ children }) => (
+import { Footer } from './Footer'
+
+export const Page: React.FC = ({ children }) => (
   <StyledPage>
     <StyledMain>{children}</StyledMain>
     <Footer />
@@ -17,5 +18,3 @@ const StyledMain = styled.div`
   flex-direction: column;
   min-height: calc(100vh - ${(props) => props.theme.topBarSize * 2}px);
 `
-
-export default Page

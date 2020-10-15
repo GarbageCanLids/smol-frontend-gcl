@@ -1,23 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import smol from '../../assets/img/smol.svg'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
-import Page from '../../components/Page'
-import PageHeader from '../../components/PageHeader'
+import { Page, PageHeader } from '../../components/Page'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
-import { Star } from '../../components/Star'
 
 const Home: React.FC = () => {
   return (
     <Page>
-      <Star.Arrangement height={'65vh'} width={'100vw'} numLargeStars={5} numSmallStars={50} />
-      <PageHeader
-        icon={<img src={smol} height={220} />}
-      />
-       <Spacer size="lg" />
-       <Container>
+      <PageHeader />
+      <Spacer size="lg" />
+      <Container>
         <Balances />
       </Container>
       <Spacer size="lg" />

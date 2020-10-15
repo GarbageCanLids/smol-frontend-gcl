@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Nav from './components/Nav'
+import { Nav } from './Nav'
 
-const Footer: React.FC = () => (
+export const Footer: React.FC = () => (
   <StyledFooter>
     <StyledFooterInner>
       <Nav />
@@ -24,5 +24,3 @@ const StyledFooterInner = styled.div`
   max-width: ${props => props.theme.siteWidth}px;
   width: 100%;
 `
-
-export default Footer

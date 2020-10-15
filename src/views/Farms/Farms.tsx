@@ -1,19 +1,13 @@
 import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
-import smol from '../../assets/img/smol.png'
+import smol from '../../assets/img/smol.svg'
 import Button from '../../components/Button'
-import Page from '../../components/Page'
-import PageHeader from '../../components/PageHeader'
+import { Page, PageHeader } from '../../components/Page'
 import WalletProviderModal from '../../components/WalletProviderModal'
 import useModal from '../../hooks/useModal'
 import Farm from '../Farm'
 import FarmCards from './components/FarmCards'
-
-
-
-
-
 
 const Farms: React.FC = () => {
   const { path } = useRouteMatch()
@@ -26,7 +20,6 @@ const Farms: React.FC = () => {
           <>
             <Route exact path={path}>
               <PageHeader
-                icon={<img src={smol} height="140" />}
                 subtitle="earn smol tings to get big tings"
                 title="smol tings rewards"
               />
