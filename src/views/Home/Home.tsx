@@ -2,15 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
-import Page from '../../components/Page'
+import { Page, PageHeader } from '../../components/Page'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
 
 const Home: React.FC = () => {
   return (
     <Page>
-       <Spacer size="lg" />
-       <Container>
+      <PageHeader />
+      <Spacer size="lg" />
+      <Container>
         <Balances />
       </Container>
       <Spacer size="lg" />

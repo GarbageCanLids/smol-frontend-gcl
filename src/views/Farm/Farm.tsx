@@ -7,7 +7,7 @@ import { provider } from 'web3-core'
 import useFarm from '../../hooks/useFarm'
 import useSmol from '../../hooks/useSmol'
 import { getContract } from '../../utils/erc20'
-import Page from '../../components/Page'
+import { Page, PageHeader } from '../../components/Page'
 import Spacer from '../../components/Spacer'
 
 import Harvest from './components/Harvest'
@@ -53,10 +53,11 @@ const Farm: React.FC = () => {
   }, [earnToken])
 
   return (
-    <Page
-      title={name}
-      subtitle={`Deposit ${lpTokenName} Tokens and earn ${earnTokenName}`}
-    >
+    <Page>
+      <PageHeader
+        title={name}
+        subtitle={`Deposit ${lpTokenName} Tokens and earn ${earnTokenName}`}
+      />
       <StyledFarm>
         <StyledCardsWrapper>
           <StyledCardWrapper>

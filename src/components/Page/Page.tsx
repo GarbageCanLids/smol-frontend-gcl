@@ -1,21 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Header } from './Header'
 import { Footer } from './Footer'
 
-interface Props {
-  subtitle?: string
-  title?: string
-}
-
-const Page: React.FC<Props> = ({
-  title,
-  subtitle,
-  children
-}) => (
+export const Page: React.FC = ({ children }) => (
   <StyledPage>
-    <Header title={title} subtitle={subtitle} />
     <StyledMain>{children}</StyledMain>
     <Footer />
   </StyledPage>
@@ -29,5 +18,3 @@ const StyledMain = styled.div`
   flex-direction: column;
   min-height: calc(100vh - ${(props) => props.theme.topBarSize * 2}px);
 `
-
-export default Page
