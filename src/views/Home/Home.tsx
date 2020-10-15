@@ -12,9 +12,10 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={smol} height={160} />}
+        icon={<img src={smol} height={220} />}
       />
-      <Container>
+       <Spacer size="lg" />
+       <Container>
         <Balances />
       </Container>
       <Spacer size="lg" />

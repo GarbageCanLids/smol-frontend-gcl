@@ -75,12 +75,6 @@ const Farm: React.FC = () => {
             />
           </StyledCardWrapper>
         </StyledCardsWrapper>
-        <Spacer size="lg" />
-        <StyledInfo>
-          ⭐️ Every time you stake and unstake LP tokens, the contract will
-          automagically harvest SMOL rewards for you!
-        </StyledInfo>
-        <Spacer size="lg" />
       </StyledFarm>
     </Page>
   )
